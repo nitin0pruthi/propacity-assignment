@@ -4,7 +4,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import Album from "./pages/album";
+import AlbumPhoto from "./pages/albumPhoto";
 import Albums from "./pages/albums";
 import Users from "./pages/users";
 
@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<Navigate to="/users" />} />
         <Route path="/users" element={<Users />} />
         <Route path="/users/:userId/albums" element={<Albums />} />
-        <Route path="/users/:userId/albums/:albumId" element={<Album />} />
+        <Route path="/users/:userId/albums/:albumId" element={<AlbumPhoto />} />
       </Routes>
     </Router>
   );

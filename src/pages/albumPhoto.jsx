@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getAlbumPhoto } from "../utils/apis/user";
 
-const Album = () => {
+const AlbumPhoto = () => {
   const params = useParams();
   const [albumPhotos, setAlbumPhotos] = useState([]);
 
@@ -31,4 +31,4 @@ const Album = () => {
   );
 };
 
-export default Album;
+export default AlbumPhoto;
